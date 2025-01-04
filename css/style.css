@@ -1,0 +1,242 @@
+/*task*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;  
+    
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0078FF; /* اللون الأزرق */
+  padding: 10px 20px;
+}
+
+/* الشعار */
+     /* تصغير الصورة */
+     .image-container img {
+  width: 100px; /* عرض الصورة */
+  height: auto; /* الحفاظ على نسبة الطول والعرض */
+  border: 2px solid #0078FF; /* إضافة إطار */
+  border-radius: 10px; /* جعل الزوايا مستديرة */
+  transition: transform 0.3s ease; /* تأثير عند التفاعل */
+}
+
+/* تأثير عند التمرير */
+.image-container img:hover {
+  transform: scale(1.1); /* تكبير بسيط عند التمرير */
+}
+
+
+/* قائمة التنقل */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #0056c7; /* لون الخلفية عند التمرير أو عند التفعيل */
+  padding: 5px 10px;
+  border-radius: 0px;
+}
+
+/* السهم أسفل العنصر النشط */
+.nav-links a.active::after {
+  content: 10px;
+  position: absolute;
+  bottom: 5px;
+  left: 10%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #0056c7 transparent transparent transparent;
+}
+  
+  /*task 1*/
+  
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e90ff, #87cefa);
+    color: #fff;
+}
+
+
+
+.hero-text h1 {
+  font-family: "Hind Mysuru", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 5rem;
+  margin: 50px;
+}
+
+
+.hero-img {
+    max-width: 10%;
+    padding-right: 300px;
+}
+
+.hero-img img {
+
+    width: 100%;
+    border-radius: 100px;
+}
+.cv-section .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+/*test2*/
+
+.container1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.container h2 {
+  text-align: center;
+    font-size: 1.5em;
+    color: #000000; 
+    margin-bottom: 30px;
+}
+
+
+
+/*test3*/
+.expertise {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 30px;
+}
+
+
+
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.item p {
+    font-size: 1em;
+    color: #000100; 
+    margin: 0;
+}
+
+
+
+/*task4*/
+
+.container h1{
+  text-align: center;
+}
+
+.icon{
+  width: 50px;
+  border: 2px solid #000; /* إطار بعرض 5 بكسل ولون أسود */
+  border-radius: 10px; /* زوايا دائرية (اختياري) */
+}
+/*task5*/
+
+
+
+.form-container {
+  position: absolute; /* تحديد وضع الصندوق */
+  top: 195%; /* مركز رأسي */
+  right: 30px; /* تحديد المسافة من اليمين */
+  transform: translateY(-50%);
+  width: 300px;
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(195, 119, 93, 0.2);
+  text-align: center;
+}
+
+.form-container h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #d3d3d3;
+}
+
+.form-container button {
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #f0f0f0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #1e90ff;
+    color: #fff;
+}
+
+
+
+
+@media (max-width: 600px) {
+  body{
+    background-color: #0056c7;
+  }
+ 
+}
+
+@media (max-width: 6010px) and (max-width: 800px) {
+  body{
+    background-color: #3b3bd3;
+  }
+  
+}
